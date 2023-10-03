@@ -6,4 +6,4 @@ def test_fizz_buzz():
    assert checkio(7) == "7"
 
 
-print("The mission is done! Click 'Check Solution' to earn rewards!")
+
