@@ -1,5 +1,5 @@
 from fizz_buzz import checkio
-def fizz_buzz_test()
+def fizz_buzz_test():
    assert checkio(15) == "Fizz Buzz"
    assert checkio(6) == "Fizz"
    assert checkio(10) == "Buzz"
