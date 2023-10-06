@@ -1,4 +1,4 @@
-from fizz_buzz import checkio
+from my_project import fizz_buzz
 import pytest
 def test_fizz_buzz():
    assert checkio(15) == "Fizz Buzz"
