@@ -1,6 +1,6 @@
 
 import pytest
-from pass6 import is_acceptable_password
+from my_project import pass6
 import re
 def test_pass6():
        assert is_acceptable_password("short") == False
