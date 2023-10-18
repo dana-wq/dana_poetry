@@ -2,11 +2,9 @@
 Module to check the acceptability of passwords.
 """
 import re
-
 def is_acceptable_password(password: str) -> bool:
     """
     Check if the password is acceptable based on certain criteria.
-
     Criteria:
     - At least three unique characters (alphanumeric).
     - Not containing the word 'password'.
@@ -21,5 +19,4 @@ def is_acceptable_password(password: str) -> bool:
         return True
     if len(password) > 6 and any(char.isdigit() for char in password):
         return True
-    
     return False
