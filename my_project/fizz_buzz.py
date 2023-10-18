@@ -12,5 +12,5 @@ def checkio(num: int) -> str:
     if num%3 == 0:
         return "Fizz"
     if num%5 == 0 :
-        return "Buzz" 
+        return "Buzz"
     return str(num)
