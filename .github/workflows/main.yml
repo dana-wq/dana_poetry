@@ -84,10 +84,10 @@ jobs:
 
       - name: Run PyLint
         continue-on-error: true
-        run: poetry run ./pylint dana_poetry, ./tests
+        run: poetry run ./pylint dana_poetry ./tests
 
       - name: Upload PyLint Report
         uses: actions/upload-artifact@v2
         with:
           name: pylint-report
-          path: pylint.log
+           path: pylint.log
