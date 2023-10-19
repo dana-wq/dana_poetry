@@ -89,5 +89,5 @@ jobs:
       - name: Upload PyLint Report
         uses: actions/upload-artifact@v2
         with:
+          path: pylint.log
           name: pylint-report
-           path: pylint.log
