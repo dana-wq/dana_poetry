@@ -11,6 +11,7 @@ jobs:
       #----------------------------------------------
       - name: Check out repository
         uses: actions/checkout@v3
+        
       - name: Set up python
         id: setup-python
         uses: actions/setup-python@v4
@@ -35,13 +36,15 @@ jobs:
         with:
           path: .venv
           key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
       #----------------------------------------------
       # install dependencies if cache does not exist
       #----------------------------------------------
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
-        #----------------------------------------------
+
+      #----------------------------------------------
       # install your root project, if required
       #----------------------------------------------
       # - name: Install project
@@ -89,5 +92,5 @@ jobs:
       - name: Upload PyLint Report
         uses: actions/upload-artifact@v2
         with:
-          path: pylint.log
           name: pylint-report
+           path: pylint.log
