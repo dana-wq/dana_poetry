@@ -1,4 +1,8 @@
-"""
+
+from my_project import fizz_buzz
+import pytest
+def test_fizz_buzz():
+    """
 FizzBuzz Test
 
 This module contains unit tests for the FizzBuzz implementation in the `fizz_buzz` module.
@@ -13,10 +17,7 @@ Test Cases:
     - Test case 3: `checkio(10)` should return "Buzz" since 10 is divisible by 5.
     - Test case 4: `checkio(7)` should return "7" since 7 is neither divisible by 3 nor 5.
 
-"""
-from my_project import fizz_buzz
-import pytest
-def test_fizz_buzz():
+""" 
    assert fizz_buzz.checkio(15) == "Fizz Buzz"
    assert fizz_buzz.checkio(6) == "Fizz"
    assert fizz_buzz.checkio(10) == "Buzz"
