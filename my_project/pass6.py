@@ -2,6 +2,8 @@
 Module to check the acceptability of passwords.
 """
 import re
+
+
 def is_acceptable_password(password: str) -> bool:
     """
     Check if the password is acceptable based on certain criteria.
@@ -12,8 +14,8 @@ def is_acceptable_password(password: str) -> bool:
     - If it's not entirely numeric.
     - If length is greater than 6 and contains at least one digit.
     """
-    unique_chars = set(re.findall(r'[a-zA-Z0-9]', password))
-    if len(unique_chars)<3:
+    unique_chars = set(re.findall(r"[a-zA-Z0-9]", password))
+    if len(unique_chars) < 3:
         return False
     if "password" in password.lower():
         return False

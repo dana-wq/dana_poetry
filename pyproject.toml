@@ -13,6 +13,7 @@ pylint = "^3.0.1"
 
 [tool.poetry.group.dev.dependencies]
 coverage = {extras = ["toml"], version = "^7.3.2"}
+black = "^23.10.0"
 
 [build-system]
 requires = ["poetry-core"]
