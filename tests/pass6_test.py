@@ -47,12 +47,9 @@ def test_pass6():
     assert pass6.is_acceptable_password("abc1") == False
     assert pass6.is_acceptable_password("abbcc12") == True
     assert pass6.is_acceptable_password("aaaaaaabbaaaaaaaab") == False
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> 9ed839162fb2a87c43576da0163319d063e946d7
