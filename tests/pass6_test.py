@@ -1,4 +1,3 @@
-import pytest
 from my_project import pass6
 
 

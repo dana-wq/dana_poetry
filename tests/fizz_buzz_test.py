@@ -1,5 +1,4 @@
 from my_project import fizz_buzz
-import pytest
 
 def test_fizz_buzz():
     """
