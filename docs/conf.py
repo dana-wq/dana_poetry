@@ -18,8 +18,8 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'dana_poetry'
-copyright = '2023, dana'
-author = 'dana'
+copyright = '2023, Dana'
+author = 'Dana'
 
 
 # -- General configuration ---------------------------------------------------
